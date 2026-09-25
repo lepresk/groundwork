@@ -29,7 +29,7 @@
     "@nestjs/terminus": "^11.0.0",
     "@nestjs/throttler": "^6.7.1",
     "argon2": "^0.45.1",
-    "bullmq": "^5.60.0",
+    "bullmq": "^6.3.8",
     "drizzle-orm": "^0.45.3",
     "ioredis": "^5.8.0",
     "iron-session": "^8.0.4",
