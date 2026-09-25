@@ -1,3 +1,6 @@
+/**
+ * Password reset request page.
+ */
 import { Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import Link from 'next/link';

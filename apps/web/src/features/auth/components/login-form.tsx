@@ -1,5 +1,8 @@
 'use client';
-
+/**
+ * Sign-in form (email, password, remember me). Submits to `loginAction`,
+ * which redirects on success.
+ */
 import { LoginRequestSchema } from '@groundwork/shared';
 import { Button, FormField } from '@groundwork/ui';
 import Link from 'next/link';

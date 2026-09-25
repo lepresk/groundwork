@@ -1,3 +1,7 @@
+/**
+ * Inline message with a tone. Danger alerts use `role="alert"` (announced
+ * immediately); others use `role="status"`.
+ */
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { ComponentProps } from 'react';
 import { cn } from '../cn';

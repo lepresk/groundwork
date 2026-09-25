@@ -1,3 +1,7 @@
+/**
+ * Client IP and user agent resolution, with and without trusting the
+ * BFF-forwarded headers.
+ */
 import type { Request } from 'express';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 

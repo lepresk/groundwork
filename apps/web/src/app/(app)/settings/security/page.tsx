@@ -1,3 +1,7 @@
+/**
+ * Account security settings: enables or disables two-factor authentication
+ * depending on the current state.
+ */
 import { Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import { DisableTwoFactor } from '@/features/account/components/disable-two-factor';

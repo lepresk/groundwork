@@ -1,3 +1,7 @@
+/**
+ * Sign-in page. Forwards the `next` destination to the form and confirms a
+ * completed password reset.
+ */
 import { Alert, Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import Link from 'next/link';

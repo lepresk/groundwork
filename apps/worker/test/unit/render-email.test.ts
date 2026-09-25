@@ -1,3 +1,7 @@
+/**
+ * Email templates: subjects, action links in both bodies, and escaping of
+ * user-controlled data.
+ */
 import type { EmailJob } from '@groundwork/shared';
 import { describe, expect, it } from 'vitest';
 import { escapeHtml } from '../../src/mail/templates/layout.js';

@@ -1,3 +1,7 @@
+/**
+ * Email processor: valid jobs are sent, malformed payloads fail without
+ * retry, transport errors are rethrown for retry.
+ */
 import { UnrecoverableError, type Job } from 'bullmq';
 import { describe, expect, it, vi } from 'vitest';
 import { EmailProcessor } from '../../src/email/email.processor.js';

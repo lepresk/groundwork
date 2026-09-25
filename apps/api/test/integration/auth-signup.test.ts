@@ -1,3 +1,7 @@
+/**
+ * Signup: persisted user and token, verification email, duplicate emails,
+ * password policy, and strict rejection of unknown fields.
+ */
 import { authTokens, users } from '@groundwork/db';
 import { ErrorResponseSchema, SignupResponseSchema } from '@groundwork/shared';
 import { eq } from 'drizzle-orm';

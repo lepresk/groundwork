@@ -1,3 +1,7 @@
+/**
+ * Health indicators report `down` with the failure reason when a
+ * dependency is unreachable.
+ */
 import { HealthIndicatorService } from '@nestjs/terminus';
 import { describe, expect, it } from 'vitest';
 import { DbHealthIndicator } from '../../src/health/db.health.js';

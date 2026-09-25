@@ -1,3 +1,7 @@
+/**
+ * Auth forms: client validation before submit, normalized values sent to
+ * the Server Actions, server errors displayed, success states.
+ */
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';

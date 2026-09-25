@@ -1,3 +1,8 @@
+/**
+ * Vitest config for the web app (jsdom + React). `server-only` is aliased to
+ * an empty stub so server modules can be unit tested. Coverage is measured on
+ * `src/lib` and `src/features`, where the logic lives.
+ */
 import { resolve } from 'node:path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';

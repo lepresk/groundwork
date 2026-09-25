@@ -1,3 +1,7 @@
+/**
+ * Auth contracts: email normalization, password policy, defaults, and the
+ * exactly-one-factor rule of the two-factor login.
+ */
 import { describe, expect, it } from 'vitest';
 import {
   LoginRequestSchema,

@@ -1,3 +1,7 @@
+/**
+ * SecretBox (AES-256-GCM) round trips, key checks, tamper detection, and
+ * token and recovery code generation and hashing.
+ */
 import { randomBytes } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
 import { SecretBox } from '../../src/shared/crypto/secret-box.js';

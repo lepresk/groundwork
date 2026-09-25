@@ -1,3 +1,6 @@
+/**
+ * BFF client: lazy runtime configuration and forwarded client headers.
+ */
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const headersMock = vi.fn();

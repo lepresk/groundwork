@@ -1,3 +1,7 @@
+/**
+ * Password reset: request without enumeration, single-use tokens, link
+ * invalidation, and revocation of every session on success.
+ */
 import { authSessions, authTokens, users } from '@groundwork/db';
 import { ErrorResponseSchema } from '@groundwork/shared';
 import { eq } from 'drizzle-orm';

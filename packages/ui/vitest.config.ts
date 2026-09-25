@@ -1,3 +1,6 @@
+/**
+ * Vitest config for the UI primitives (jsdom + Testing Library).
+ */
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({

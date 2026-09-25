@@ -1,3 +1,6 @@
+/**
+ * Email job contract: valid payloads and template/data mismatches.
+ */
 import { describe, expect, it } from 'vitest';
 import { EmailJobSchema } from '../src/queues.js';
 

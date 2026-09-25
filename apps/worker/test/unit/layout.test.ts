@@ -1,3 +1,6 @@
+/**
+ * HTML escaping used by every email template.
+ */
 import { describe, expect, it } from 'vitest';
 import { escapeHtml } from '../../src/mail/templates/layout.js';
 

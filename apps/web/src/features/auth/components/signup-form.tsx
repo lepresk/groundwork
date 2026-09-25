@@ -1,5 +1,8 @@
 'use client';
-
+/**
+ * Account creation form. Submits to `signupAction`, which redirects to the
+ * check-email page on success.
+ */
 import { PASSWORD_MIN_LENGTH, SignupRequestSchema } from '@groundwork/shared';
 import { Button, FormField } from '@groundwork/ui';
 import { signupAction } from '../actions';

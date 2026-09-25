@@ -1,3 +1,6 @@
+/**
+ * Loading indicator announced to assistive technology as "Loading".
+ */
 import { cn } from '../cn';
 
 export function Spinner({ className }: { readonly className?: string }) {

@@ -95,7 +95,8 @@ The shared tsconfig enables the strictest options (`strict`, `noUncheckedIndexed
 
 ## 3. Comments and documentation
 
-- Every file with non-trivial logic starts with a JSDoc header: what it is for and how to use it.
+- **Every code file starts with a JSDoc header** (after an optional `'use client'` / `'use server'` directive): what the file is for and how to use it. Source, tests, and configs alike. Enforced by `pnpm check:docs`.
+- Exported functions, classes, and components get JSDoc when their contract is not obvious from the signature (edge cases, side effects, security constraints).
 - Comment the _why_ and the non-obvious (constraints, edge cases, workarounds, security reasons). Never restate the code.
 - No conversational comments, no decorative banners, no `TODO` without an issue reference.
 - Do not create summary or report Markdown files after a change unless asked. Update existing docs when a convention changes.
@@ -178,7 +179,7 @@ Every command or query with business rules is an action: an `@Injectable()` clas
 
 - [ ] `pnpm verify` is green (or the filtered equivalent for every workspace touched)
 - [ ] New behavior is tested at the right level, mutations checked in the database
-- [ ] No new `any`, `!`, `enum`, `process.env`, em dash, or emoji
+- [ ] Every new file has a header; no new `any`, `!`, `enum`, `process.env`, em dash, or emoji
 - [ ] New error codes have a status, an `@ApiErrors` entry, and user copy
 - [ ] Schema changes have a migration
 - [ ] Docs, ADRs, and these rules updated when a convention changed

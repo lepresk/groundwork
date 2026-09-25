@@ -1,3 +1,7 @@
+/**
+ * Cursor pagination helpers: encoding round trip, malformed cursors, and
+ * page splitting.
+ */
 import { describe, expect, it } from 'vitest';
 import { decodeCursor, encodeCursor, toPage } from '../../src/shared/pagination/cursor.js';
 

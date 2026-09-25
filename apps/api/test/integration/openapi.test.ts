@@ -1,3 +1,7 @@
+/**
+ * OpenAPI generation: the document builds and describes auth routes and
+ * their error responses.
+ */
 import { Test } from '@nestjs/testing';
 import request from 'supertest';
 import { describe, expect, it } from 'vitest';

@@ -1,3 +1,6 @@
+/**
+ * Second sign-in step for accounts with two-factor authentication.
+ */
 import { Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import { TwoFactorLoginForm } from '@/features/auth/components/two-factor-login-form';

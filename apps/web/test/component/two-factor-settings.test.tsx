@@ -1,3 +1,7 @@
+/**
+ * Two-factor settings: enrollment with QR code and one-time recovery codes,
+ * setup errors, and the confirmation step before disabling.
+ */
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';

@@ -1,3 +1,6 @@
+/**
+ * Vitest config for the shared contracts (pure Node, no setup).
+ */
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({

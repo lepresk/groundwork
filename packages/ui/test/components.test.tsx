@@ -1,3 +1,7 @@
+/**
+ * UI primitives: pending buttons, accessible form fields, alert roles,
+ * cards, and class merging.
+ */
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import {

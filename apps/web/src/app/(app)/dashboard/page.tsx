@@ -1,3 +1,6 @@
+/**
+ * Dashboard placeholder: the starting point for the first product feature.
+ */
 import { Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import { requireUser } from '@/lib/session';

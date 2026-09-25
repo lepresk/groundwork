@@ -1,3 +1,7 @@
+/**
+ * Next.js config: standalone output for small Docker images, typed routes,
+ * source transpilation of `@groundwork/ui`, and security headers on every route.
+ */
 import { resolve } from 'node:path';
 import type { NextConfig } from 'next';
 

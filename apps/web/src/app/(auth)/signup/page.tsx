@@ -1,3 +1,6 @@
+/**
+ * Account creation page. Links back to sign-in for existing users.
+ */
 import { Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import Link from 'next/link';

@@ -1,3 +1,6 @@
+/**
+ * Health probes and the canonical 404 body on the real application.
+ */
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { createTestApp, type TestApp } from '../helpers/test-app.js';
 

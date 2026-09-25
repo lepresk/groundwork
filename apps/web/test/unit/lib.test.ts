@@ -1,3 +1,6 @@
+/**
+ * Web helpers: safe redirects, Zod field errors, action results, and error copy.
+ */
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 import { actionFailure, invalidInput } from '@/lib/action-result';

@@ -1,5 +1,7 @@
 'use client';
-
+/**
+ * Sign-out button with a pending state while the Server Action runs.
+ */
 import { Button } from '@groundwork/ui';
 import { useTransition } from 'react';
 import { logoutAction } from '../actions';

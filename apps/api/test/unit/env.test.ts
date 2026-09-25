@@ -1,3 +1,7 @@
+/**
+ * API environment schema: defaults, coercion, key validation, and the
+ * fail-fast report at import time.
+ */
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { EnvSchema } from '../../src/config/env.js';
 

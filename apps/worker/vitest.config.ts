@@ -1,3 +1,7 @@
+/**
+ * Vitest config for the worker. SWC compiles decorators with metadata;
+ * files run serially because the integration suite uses a real Redis.
+ */
 import swc from 'unplugin-swc';
 import { defineConfig } from 'vitest/config';
 

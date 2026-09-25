@@ -1,3 +1,7 @@
+/**
+ * Landing page of the reset link: new password form, or a way to request a
+ * new link when the token is missing.
+ */
 import { Alert, Button, Card, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import Link from 'next/link';

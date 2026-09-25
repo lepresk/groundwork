@@ -1,3 +1,6 @@
+/**
+ * Cursor page query defaults, coercion, bounds, and the page envelope.
+ */
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 import { CursorPageQuerySchema, PAGE_SIZE_DEFAULT, cursorPageSchema } from '../src/pagination.js';

@@ -1,3 +1,6 @@
+/**
+ * Layout of the public authentication pages: a centered, narrow column.
+ */
 import type { ReactNode } from 'react';
 
 export default function AuthLayout({ children }: { readonly children: ReactNode }) {

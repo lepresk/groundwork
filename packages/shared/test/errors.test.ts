@@ -1,3 +1,6 @@
+/**
+ * Error code registry and the strict error body schema.
+ */
 import { describe, expect, it } from 'vitest';
 import { ErrorResponseSchema, isErrorCode } from '../src/errors.js';
 

@@ -1,3 +1,6 @@
+/**
+ * Web server environment: invalid configuration fails at first use.
+ */
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 describe('serverEnv', () => {

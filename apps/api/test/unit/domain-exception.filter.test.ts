@@ -1,3 +1,7 @@
+/**
+ * Global exception filter: every exception family renders the canonical
+ * error body, and internal details never leak.
+ */
 import {
   type ArgumentsHost,
   HttpException,

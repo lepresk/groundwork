@@ -1,5 +1,8 @@
 'use client';
-
+/**
+ * Second sign-in step: an authenticator code, or a recovery code as a
+ * fallback. The inactive field is unregistered so only one is sent.
+ */
 import { TwoFactorLoginRequestSchema } from '@groundwork/shared';
 import { Button, FormField } from '@groundwork/ui';
 import { useState } from 'react';

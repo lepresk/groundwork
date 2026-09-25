@@ -1,3 +1,7 @@
+/**
+ * drizzle-kit config (`pnpm db:generate`, `pnpm db:studio`). Reads
+ * `DATABASE_URL` from the root `.env`; migrations are written to `./drizzle`.
+ */
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig } from 'drizzle-kit';

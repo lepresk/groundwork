@@ -1,3 +1,6 @@
+/**
+ * Session helpers: current user resolution and the redirect to login.
+ */
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const callApi = vi.fn();

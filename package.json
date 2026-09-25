@@ -25,18 +25,20 @@
     "check:text": "node scripts/check-text.mjs",
     "check:deps": "sherif",
     "check:unused": "knip",
-    "check": "pnpm format:check && pnpm check:text && pnpm check:deps && pnpm lint && pnpm typecheck && pnpm check:unused",
+    "check": "pnpm format:check && pnpm check:text && pnpm check:docs && pnpm check:deps && pnpm lint && pnpm typecheck && pnpm check:unused",
     "verify": "pnpm check && pnpm build && pnpm test",
     "db:generate": "pnpm --filter @groundwork/db db:generate",
     "db:migrate": "pnpm --filter @groundwork/db db:migrate",
     "db:studio": "pnpm --filter @groundwork/db db:studio",
     "infra:up": "docker compose up -d --wait",
     "infra:down": "docker compose down",
-    "clean": "turbo run clean && rm -rf node_modules .turbo"
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
+    "check:docs": "node scripts/check-docs.mjs"
   },
   "lint-staged": {
     "*.{ts,tsx,js,mjs,cjs,jsx,json,md,mdc,yml,yaml,css}": "prettier --write",
-    "*.{ts,tsx,js,mjs,md,mdc}": "node scripts/check-text.mjs"
+    "*.{ts,tsx,js,mjs,md,mdc}": "node scripts/check-text.mjs",
+    "*.{ts,tsx,js,mjs,cjs}": "node scripts/check-docs.mjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",

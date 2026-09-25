@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Claude Code PostToolUse hook: formats the edited file with Prettier and
- * runs the text hygiene check on it. Exit code 2 feeds the failure back to
+ * Claude Code PostToolUse hook: formats the edited file with Prettier, then
+ * runs the text hygiene and file documentation checks on it. Exit code 2 feeds the failure back to
  * the agent so it fixes the file instead of moving on.
  */
 import { spawnSync } from 'node:child_process';
@@ -27,8 +27,10 @@ spawnSync('pnpm', ['exec', 'prettier', '--write', '--log-level', 'warn', file], 
   stdio: 'ignore',
 });
 
-const check = spawnSync('node', ['scripts/check-text.mjs', file], { cwd: root, encoding: 'utf8' });
-if (check.status !== 0) {
-  process.stderr.write(check.stderr);
-  process.exit(2);
+for (const script of ['scripts/check-text.mjs', 'scripts/check-docs.mjs']) {
+  const check = spawnSync('node', [script, file], { cwd: root, encoding: 'utf8' });
+  if (check.status !== 0) {
+    process.stderr.write(check.stderr);
+    process.exit(2);
+  }
 }

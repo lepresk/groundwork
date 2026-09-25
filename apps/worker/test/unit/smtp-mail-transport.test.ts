@@ -1,3 +1,7 @@
+/**
+ * SMTP transport configuration (with and without credentials), sender,
+ * and pool shutdown.
+ */
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 const createTransport = vi.fn(() => ({ sendMail: vi.fn(), close: vi.fn() }));

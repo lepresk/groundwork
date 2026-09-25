@@ -1,3 +1,6 @@
+/**
+ * Result helpers build the success and failure variants used by actions.
+ */
 import { describe, expect, it } from 'vitest';
 import { fail, ok } from '../src/result.js';
 

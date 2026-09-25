@@ -30,6 +30,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm format:check
       - run: pnpm check:text
+      - run: pnpm check:docs
       - run: pnpm check:deps
       - run: pnpm lint
       - run: pnpm typecheck
@@ -125,6 +126,7 @@ jobs:
       - run: pnpm --filter @groundwork/db --filter @groundwork/shared build
       - run: pnpm db:generate --name add_sample_items
       - run: pnpm format
+      - run: pnpm check:docs
       - run: pnpm --filter @groundwork/api --filter @groundwork/web typecheck
       - run: pnpm --filter @groundwork/api lint
       - run: pnpm --filter @groundwork/api test

@@ -1,3 +1,7 @@
+/**
+ * Layout of the signed-in area. `requireUser()` is the real access check
+ * (the proxy only checks cookie presence) and provides the header identity.
+ */
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { LogoutButton } from '@/features/auth/components/logout-button';

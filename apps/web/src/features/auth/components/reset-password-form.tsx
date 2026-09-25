@@ -1,5 +1,7 @@
 'use client';
-
+/**
+ * New password form for a reset link. The token travels as a hidden field.
+ */
 import { PASSWORD_MIN_LENGTH, ResetPasswordRequestSchema } from '@groundwork/shared';
 import { Button, FormField } from '@groundwork/ui';
 import { resetPasswordAction } from '../actions';

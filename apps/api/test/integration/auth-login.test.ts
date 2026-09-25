@@ -1,3 +1,7 @@
+/**
+ * Login, session cookie, `/me`, and logout: cookie flags, remember-me
+ * lifetimes, client metadata, credential failures, revocation, and expiry.
+ */
 import { authSessions } from '@groundwork/db';
 import {
   ErrorResponseSchema,

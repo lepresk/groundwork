@@ -1,3 +1,7 @@
+/**
+ * Session registry sliding expiry against the real database: write
+ * throttling, idle extension, and remember-me sessions never shortened.
+ */
 import { authSessions } from '@groundwork/db';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import { SESSION_IDLE_TTL_MS } from '../../src/modules/auth/auth.constants.js';

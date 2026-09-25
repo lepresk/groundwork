@@ -1,3 +1,6 @@
+/**
+ * Root 404 page, rendered for any unknown route, with a way back to the app.
+ */
 import { Button, Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import Link from 'next/link';
 

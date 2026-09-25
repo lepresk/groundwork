@@ -1,3 +1,6 @@
+/**
+ * Public entry of `@groundwork/ui`: design system primitives and `cn`.
+ */
 export { cn } from './cn';
 export { Alert, type AlertProps } from './components/alert';
 export { Button, type ButtonProps } from './components/button';

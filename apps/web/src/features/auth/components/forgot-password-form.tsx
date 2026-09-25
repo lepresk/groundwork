@@ -1,5 +1,8 @@
 'use client';
-
+/**
+ * Password reset request form. The confirmation is identical whether or not
+ * the account exists.
+ */
 import { EmailRequestSchema } from '@groundwork/shared';
 import { Alert, Button, FormField } from '@groundwork/ui';
 import { useState } from 'react';

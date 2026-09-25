@@ -1,3 +1,7 @@
+/**
+ * Email verification: token consumption, reuse, expiry, and re-sending
+ * without revealing whether an account exists.
+ */
 import { authTokens, users } from '@groundwork/db';
 import { ErrorResponseSchema } from '@groundwork/shared';
 import { eq } from 'drizzle-orm';

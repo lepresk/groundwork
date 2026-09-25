@@ -1,3 +1,7 @@
+/**
+ * `callApi`: schema-validated success bodies, error normalization, field
+ * errors, upstream outages, and session cookie relay.
+ */
 import { SESSION_COOKIE_NAME } from '@groundwork/shared';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { z } from 'zod';

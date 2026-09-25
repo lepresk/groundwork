@@ -1,3 +1,6 @@
+/**
+ * Card container and its header, title, and description parts.
+ */
 import type { ComponentProps } from 'react';
 import { cn } from '../cn';
 

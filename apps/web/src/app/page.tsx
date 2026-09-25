@@ -1,3 +1,6 @@
+/**
+ * Entry route: sends signed-in users to the dashboard, others to login.
+ */
 import { redirect } from 'next/navigation';
 import { getCurrentUser } from '@/lib/session';
 

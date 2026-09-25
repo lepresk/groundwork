@@ -1,5 +1,7 @@
 'use client';
-
+/**
+ * Root error boundary: a recoverable, human message instead of a crash page.
+ */
 import { Button, Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 
 export default function ErrorPage({

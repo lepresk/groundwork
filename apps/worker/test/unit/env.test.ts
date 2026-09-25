@@ -1,3 +1,6 @@
+/**
+ * Worker environment schema: defaults, coercion, and fail-fast import.
+ */
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { EnvSchema } from '../../src/config/env.js';
 

@@ -1,3 +1,8 @@
+/**
+ * Vitest config for the API. SWC compiles decorators with metadata (Nest DI).
+ * The global setup migrates the test database once; files run serially
+ * because integration suites share that database.
+ */
 import swc from 'unplugin-swc';
 import { defineConfig } from 'vitest/config';
 

@@ -1,3 +1,7 @@
+/**
+ * Landing page of the confirmation link. Consumes the token server-side and
+ * shows the outcome, with a resend form on failure.
+ */
 import { Alert, Button, Card, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import Link from 'next/link';

@@ -1,3 +1,6 @@
+/**
+ * Shown after signup: explains the confirmation email and offers a resend.
+ */
 import { Card, CardDescription, CardHeader, CardTitle } from '@groundwork/ui';
 import type { Metadata } from 'next';
 import { ResendVerificationForm } from '@/features/auth/components/resend-verification-form';

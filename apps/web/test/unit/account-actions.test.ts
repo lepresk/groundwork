@@ -1,3 +1,7 @@
+/**
+ * Account Server Actions: QR code rendering, input re-validation, API
+ * failures, and page revalidation after changes.
+ */
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const callApi = vi.fn();

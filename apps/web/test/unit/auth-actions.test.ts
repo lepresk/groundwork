@@ -1,3 +1,7 @@
+/**
+ * Auth Server Actions: input re-validation, redirects (safe destinations
+ * only), cookie relay, and user-facing failures.
+ */
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 const callApi = vi.fn();

@@ -1,3 +1,7 @@
+/**
+ * Text input styled with design tokens. Shows the danger border when
+ * `aria-invalid` is set.
+ */
 import type { ComponentProps } from 'react';
 import { cn } from '../cn';
 

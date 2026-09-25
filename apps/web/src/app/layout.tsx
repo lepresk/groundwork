@@ -1,3 +1,6 @@
+/**
+ * Root layout: global styles, document language, and default metadata.
+ */
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';

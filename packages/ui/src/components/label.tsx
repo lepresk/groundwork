@@ -1,3 +1,6 @@
+/**
+ * Form label. Pair it with a control through `htmlFor`.
+ */
 import type { ComponentProps } from 'react';
 import { cn } from '../cn';
 

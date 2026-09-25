@@ -1,5 +1,8 @@
 'use client';
-
+/**
+ * Requests a new confirmation link. The confirmation never reveals whether
+ * the account exists.
+ */
 import { EmailRequestSchema } from '@groundwork/shared';
 import { Alert, Button, FormField } from '@groundwork/ui';
 import { useState } from 'react';

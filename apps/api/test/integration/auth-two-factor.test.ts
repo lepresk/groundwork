@@ -1,3 +1,7 @@
+/**
+ * Two-factor lifecycle: setup, enable with recovery codes, login challenge
+ * with TOTP or single-use recovery code, and guarded disable.
+ */
 import { twoFactorCredentials, twoFactorRecoveryCodes } from '@groundwork/db';
 import {
   AuthenticatedResponseSchema,

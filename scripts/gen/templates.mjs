@@ -296,7 +296,11 @@ export class ${n.pascalPlural}Controller {
 }
 `;
 
-export const nestModule = (n) => `import { Module } from '@nestjs/common';
+export const nestModule = (n) => `/**
+ * ${n.title} feature: wires the controller, repository, and actions.
+ * Imports AuthModule for the session guard behind \`@Authenticated()\`.
+ */
+import { Module } from '@nestjs/common';
 import { AuthModule } from '../auth/auth.module.js';
 import { Create${n.pascal}Action } from './actions/create-${n.kebab}.action.js';
 import { Get${n.pascal}Action } from './actions/get-${n.kebab}.action.js';
@@ -312,7 +316,11 @@ import { ${n.pascalPlural}Repository } from './${n.kebabPlural}.repository.js';
 export class ${n.pascalPlural}Module {}
 `;
 
-export const integrationTest = (n) => `import { ${n.camelPlural} } from '@groundwork/db';
+export const integrationTest = (n) => `/**
+ * ${n.title} endpoints on the real test database: creation, validation,
+ * cursor pagination, ownership isolation, and authentication.
+ */
+import { ${n.camelPlural} } from '@groundwork/db';
 import {
   ErrorResponseSchema,
   ${n.pascal}ListResponseSchema,
