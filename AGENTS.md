@@ -167,7 +167,7 @@ Every command or query with business rules is an action: an `@Injectable()` clas
 
 ## 10. Commits and pull requests
 
-- Conventional Commits, enforced by commitlint: `feat(api): add invoice export`. Allowed scopes: `api`, `worker`, `web`, `db`, `shared`, `ui`, `config`, `ci`, `deps`, `docs`, `ai`, `repo`.
+- Conventional Commits, enforced by commitlint: `feat(api): add invoice export`. Allowed scopes: `api`, `worker`, `web`, `db`, `shared`, `ui`, `config`, `ci`, `deps`, `deps-dev`, `docs`, `ai`, `repo`.
 - Subject in lower case, imperative, no trailing period, 100 characters max.
 - One logical change per commit. Never commit `.env` files, secrets, or generated `dist/`.
 - AI co-author trailers are stripped by the `commit-msg` hook.
