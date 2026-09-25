@@ -1,0 +1,17 @@
+# Keep build contexts small and deterministic. Secrets never enter images.
+**/node_modules
+**/.pnpm-store
+**/.turbo
+**/dist
+**/.next
+**/coverage
+**/.env
+**/.env.*
+!**/.env.example
+.git
+.github
+.claude
+.cursor
+docs
+*.md
+!README.md

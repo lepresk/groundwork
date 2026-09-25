@@ -1,0 +1,11 @@
+---
+description: Repository-wide rules. Canonical source is AGENTS.md.
+alwaysApply: true
+---
+
+Follow `AGENTS.md` at the repository root, plus the `AGENTS.md` of the workspace you edit. Key rules:
+
+- Read existing code first and follow its pattern. Generate modules with `pnpm gen module <name>`.
+- English only in code. No em dash (U+2014), no emoji.
+- Every behavior change ships with tests. Verify with `pnpm verify` before declaring done.
+- Conventional Commits with an allowed scope.

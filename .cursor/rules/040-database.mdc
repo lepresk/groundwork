@@ -1,0 +1,7 @@
+---
+description: Drizzle schema and migration rules (packages/db)
+globs: ['packages/db/**']
+alwaysApply: false
+---
+
+See `packages/db/AGENTS.md`. Every schema change ships with `pnpm db:generate --name <descriptive_name>`. Never edit an applied migration. `timestamptz` everywhere, explicit `onDelete`, index foreign keys, secrets encrypted, tokens hashed.

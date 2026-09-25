@@ -1,0 +1,7 @@
+# Strip auto-injected AI co-author trailers, then enforce Conventional Commits.
+msg_file="$1"
+tmp_file="$(mktemp)"
+grep -viE '^Co-authored-by:[[:space:]]+(Cursor|Claude|Codex|Copilot|ChatGPT|OpenAI|Anthropic|Gemini)[[:space:]]*<' "$msg_file" > "$tmp_file"
+mv "$tmp_file" "$msg_file"
+
+pnpm exec commitlint --edit "$msg_file"

@@ -1,0 +1,11 @@
+---
+description: Testing rules
+globs: ['**/test/**', '**/*.test.ts', '**/*.test.tsx']
+alwaysApply: false
+---
+
+- AAA structure with blank lines between Arrange, Act, Assert. Behavior-named tests.
+- Happy path, every failure, edge cases, and weird paths (reuse, replay, expiry, concurrency).
+- Never mock Postgres or Redis in integration tests. Assert mutations in the database.
+- Parse API responses with the shared Zod schema.
+- Coverage thresholds: 90% lines, statements, functions; 85% branches. Never weaken or skip a test to pass.

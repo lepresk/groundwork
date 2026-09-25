@@ -1,0 +1,32 @@
+/*
+ * Design tokens. Components only use these semantic tokens, never raw
+ * palette values, so theming is a matter of redefining the variables.
+ * Import once from the app stylesheet: `@import '@groundwork/ui/styles.css';`
+ */
+@theme {
+  --color-background: oklch(0.99 0 0);
+  --color-foreground: oklch(0.21 0.02 265);
+  --color-muted: oklch(0.96 0.005 265);
+  --color-muted-foreground: oklch(0.52 0.02 265);
+  --color-border: oklch(0.91 0.01 265);
+  --color-ring: oklch(0.55 0.15 265);
+  --color-primary: oklch(0.27 0.03 265);
+  --color-primary-foreground: oklch(0.99 0 0);
+  --color-danger: oklch(0.55 0.2 25);
+  --color-danger-foreground: oklch(0.99 0 0);
+  --color-success: oklch(0.55 0.14 150);
+  --radius-control: 0.5rem;
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: oklch(0.17 0.01 265);
+    --color-foreground: oklch(0.96 0.005 265);
+    --color-muted: oklch(0.24 0.015 265);
+    --color-muted-foreground: oklch(0.7 0.015 265);
+    --color-border: oklch(0.3 0.015 265);
+    --color-primary: oklch(0.96 0.005 265);
+    --color-primary-foreground: oklch(0.21 0.02 265);
+  }
+}

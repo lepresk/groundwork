@@ -1,0 +1,14 @@
+---
+description: NestJS API conventions (apps/api)
+globs: ['apps/api/**']
+alwaysApply: false
+---
+
+See `apps/api/AGENTS.md`. In short:
+
+- Controllers are thin: DTO in, one action, `DomainException(result.error)` on failure, `@ZodResponse` out.
+- Actions: `@Injectable()` with one `execute()`, returning `Result<T, ErrorCode>` via `ok()` / `fail()`.
+- Repositories take the executor first and scope every query by owner (another owner's row is `not_found`).
+- Multi-statement writes in `db.transaction()`; side effects via `registerAfterCommitHook`.
+- New error code: `packages/shared/src/errors.ts` + `error-catalog.ts` + `apps/web/src/lib/errors.ts`.
+- Protect routes with `@Authenticated()`; throttle credential endpoints with `@AuthThrottle()`.

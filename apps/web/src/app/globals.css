@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@import '@groundwork/ui/styles.css';
+
+/* Tailwind v4 scans app sources automatically; UI package sources must be declared. */
+@source '../../../../packages/ui/src';
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}

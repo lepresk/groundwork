@@ -1,0 +1,49 @@
+{
+  "name": "@groundwork/worker",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Background worker (NestJS application context + BullMQ). Consumes queues produced by the API.",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && swc src -d dist --strip-leading-paths",
+    "dev": "node --watch --enable-source-maps --import @swc-node/register/esm-register src/main.ts",
+    "start": "node --enable-source-maps dist/main.js",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "clean": "rm -rf dist .turbo coverage"
+  },
+  "dependencies": {
+    "@groundwork/shared": "workspace:*",
+    "@nestjs/bullmq": "^11.0.0",
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "bullmq": "^5.60.0",
+    "nestjs-pino": "^5.0.0",
+    "nodemailer": "^7.0.0",
+    "pino": "^10.3.1",
+    "pino-http": "^11.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@groundwork/eslint-config": "workspace:*",
+    "@groundwork/tsconfig": "workspace:*",
+    "@nestjs/testing": "^11.1.0",
+    "@swc-node/register": "^1.12.1",
+    "@swc/cli": "^0.7.0",
+    "@swc/core": "^1.16.0",
+    "@types/node": "^24.0.0",
+    "@types/nodemailer": "^7.0.0",
+    "@vitest/coverage-v8": "^5.0.0",
+    "eslint": "^10.11.0",
+    "pino-pretty": "^13.1.3",
+    "typescript": "~6.0.0",
+    "unplugin-swc": "^2.0.0",
+    "vitest": "^5.0.0"
+  }
+}

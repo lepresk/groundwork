@@ -1,0 +1,13 @@
+---
+description: Next.js BFF and UI conventions (apps/web, packages/ui)
+globs: ['apps/web/**', 'packages/ui/**']
+alwaysApply: false
+---
+
+See `apps/web/AGENTS.md` and `packages/ui/AGENTS.md`. In short:
+
+- The browser never calls the API. Read in Server Components with `callApi`, mutate in Server Actions.
+- Server Actions re-validate with the shared schema and return `ActionResult` or `redirect()`.
+- Forms use `useActionForm`. Every view handles loading, empty, success, and error states.
+- Reuse `@groundwork/ui`; add missing primitives there. Semantic tokens only.
+- Confirm destructive actions explicitly. Accessible labels and error wiring always.

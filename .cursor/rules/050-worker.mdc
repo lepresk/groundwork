@@ -1,0 +1,7 @@
+---
+description: BullMQ worker conventions (apps/worker)
+globs: ['apps/worker/**']
+alwaysApply: false
+---
+
+See `apps/worker/AGENTS.md`. Payload schemas live in `packages/shared/src/queues.ts`. Parse every job; malformed payloads throw `UnrecoverableError`, transient errors are rethrown for retry. Processors are idempotent. External systems sit behind a port for tests.

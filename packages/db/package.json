@@ -1,0 +1,41 @@
+{
+  "name": "@groundwork/db",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Drizzle schema, migrations, and database client factory shared by api and worker.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "drizzle"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch --preserveWatchOutput",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "node dist/migrate.js",
+    "db:studio": "drizzle-kit studio",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.3",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@groundwork/eslint-config": "workspace:*",
+    "@groundwork/tsconfig": "workspace:*",
+    "@types/pg": "^8.15.0",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^10.11.0",
+    "typescript": "~6.0.0"
+  }
+}

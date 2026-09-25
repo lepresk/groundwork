@@ -1,0 +1,33 @@
+# Groundwork
+
+> Production-grade NestJS + Next.js monorepo starter: strict TypeScript, Zod contracts shared across apps, Next.js BFF, server-side session auth with TOTP 2FA, BullMQ worker, real-database tests, and first-class rules for AI coding agents.
+
+Start with AGENTS.md: it is the canonical rulebook for agents and humans. Each workspace has its own AGENTS.md with local rules.
+
+## Rules and workflow
+
+- [AGENTS.md](AGENTS.md): conventions, commands, definition of done
+- [CLAUDE.md](CLAUDE.md): Claude Code skills, subagents, hooks, MCP
+- [docs/principles.md](docs/principles.md): engineering principles
+
+## Architecture
+
+- [docs/architecture/overview.md](docs/architecture/overview.md): components and request flow
+- [docs/architecture/authentication.md](docs/architecture/authentication.md): sessions, 2FA, tokens
+- [docs/adr/README.md](docs/adr/README.md): architecture decision records
+
+## Guides
+
+- [docs/guides/getting-started.md](docs/guides/getting-started.md)
+- [docs/guides/adding-a-module.md](docs/guides/adding-a-module.md)
+- [docs/guides/api-conventions.md](docs/guides/api-conventions.md)
+- [docs/guides/testing.md](docs/guides/testing.md)
+- [docs/guides/deployment.md](docs/guides/deployment.md)
+
+## Code entry points
+
+- [apps/api/src/app.module.ts](apps/api/src/app.module.ts): API modules
+- [apps/api/src/modules/auth](apps/api/src/modules/auth): reference implementation of the action pattern
+- [apps/web/src/lib/api/call.ts](apps/web/src/lib/api/call.ts): typed BFF calls
+- [packages/shared/src](packages/shared/src): shared contracts
+- [scripts/gen/templates.mjs](scripts/gen/templates.mjs): what a generated module looks like

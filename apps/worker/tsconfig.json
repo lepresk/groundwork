@@ -1,0 +1,4 @@
+{
+  "extends": "@groundwork/tsconfig/nestjs.json",
+  "include": ["src", "test", "*.config.ts"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@groundwork/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "library.json",
+    "nestjs.json",
+    "nextjs.json"
+  ]
+}

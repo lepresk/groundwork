@@ -1,0 +1,23 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+engineStrict: true
+autoInstallPeers: true
+strictPeerDependencies: false
+preferWorkspacePackages: true
+
+# Supply-chain guard: never install a version published less than 24 hours ago.
+minimumReleaseAge: 1440
+
+# Install scripts are opt-in. `true` allows native builds, `false` denies explicitly.
+allowBuilds:
+  '@nestjs/core': true
+  '@swc/core': true
+  argon2: true
+  esbuild: true
+  msgpackr-extract: true
+  sharp: true
+  unrs-resolver: true
+  # Install-time telemetry pulled in by swagger-ui-dist.
+  '@scarf/scarf': false
