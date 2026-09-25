@@ -41,13 +41,13 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
-    "@types/node": "^24.0.0",
+    "@types/node": "catalog:",
     "husky": "^9.1.7",
     "knip": "^6.38.0",
     "lint-staged": "^17.5.1",
     "prettier": "^3.9.9",
     "sherif": "^1.13.0",
     "turbo": "^2.11.0",
-    "typescript": "~6.0.0"
+    "typescript": "catalog:"
   }
 }

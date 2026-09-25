@@ -25,14 +25,14 @@
     "clean": "rm -rf dist .turbo coverage"
   },
   "dependencies": {
-    "zod": "^4.6.5"
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@groundwork/eslint-config": "workspace:*",
     "@groundwork/tsconfig": "workspace:*",
-    "@vitest/coverage-v8": "^5.0.0",
-    "eslint": "^10.11.0",
-    "typescript": "~6.0.0",
-    "vitest": "^5.0.0"
+    "@vitest/coverage-v8": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

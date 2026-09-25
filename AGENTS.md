@@ -105,6 +105,7 @@ The shared tsconfig enables the strictest options (`strict`, `noUncheckedIndexed
 - **Keep it simple.** No speculative abstraction, no pattern for its own sake. Three similar lines beat a premature helper; the same logic twice gets extracted.
 - **One file, one responsibility.** Named exports only, except where a framework requires a default export (Next.js pages, layouts, configs).
 - **Cross-app code lives in packages.** Contracts in `packages/shared`, persistence in `packages/db`, UI in `packages/ui`. An app never imports from another app.
+- **One version per shared dependency.** A dependency used by several workspaces is declared once in the `catalog:` of `pnpm-workspace.yaml` and referenced as `"catalog:"`. Framework families (`@nestjs/*`, `next`) always live there so they resolve to a single instance.
 - **Controllers, processors, pages, and Server Actions are thin.** They parse input, call one action or service, and shape the output. No business logic.
 
 ### Action pattern (api)

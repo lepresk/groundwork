@@ -32,16 +32,16 @@
   "devDependencies": {
     "@groundwork/eslint-config": "workspace:*",
     "@groundwork/tsconfig": "workspace:*",
-    "@testing-library/jest-dom": "^6.8.0",
-    "@testing-library/react": "^16.3.0",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.0",
-    "@vitest/coverage-v8": "^5.0.0",
-    "eslint": "^10.11.0",
-    "jsdom": "^27.0.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "typescript": "~6.0.0",
-    "vitest": "^5.0.0"
+    "@testing-library/jest-dom": "catalog:",
+    "@testing-library/react": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "eslint": "catalog:",
+    "jsdom": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }
