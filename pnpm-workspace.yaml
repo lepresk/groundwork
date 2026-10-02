@@ -36,19 +36,19 @@ catalog:
   '@nestjs/throttler': ^6.7.1
   '@next/eslint-plugin-next': ^16.3.6
   '@swc-node/register': ^1.12.1
-  '@swc/cli': ^0.7.10
-  '@swc/core': ^1.16.2
+  '@swc/cli': ^0.8.1
+  '@swc/core': ^1.16.12
   '@testing-library/jest-dom': ^6.10.0
   '@testing-library/react': ^16.3.3
-  '@types/node': ^24.13.6
+  '@types/node': ^24.19.0
   '@types/react': ^19.3.0
   '@types/react-dom': ^19.3.0
-  '@vitest/coverage-v8': ^5.0.1
+  '@vitest/coverage-v8': ^5.0.2
   'bullmq': ^5.81.5
   'drizzle-orm': ^0.45.3
   'eslint': ^10.11.0
   'jsdom': ^27.4.0
-  'nestjs-pino': ^5.2.0
+  'nestjs-pino': ^5.2.1
   'nestjs-zod': ^5.5.0
   'next': ^16.3.6
   'pino': ^10.3.1
@@ -60,5 +60,5 @@ catalog:
   'rxjs': ^7.8.2
   'typescript': ~6.0.3
   'unplugin-swc': ^2.0.0
-  'vitest': ^5.0.1
+  'vitest': ^5.0.2
   'zod': ^4.6.5
