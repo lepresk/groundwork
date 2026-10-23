@@ -41,15 +41,15 @@
     "*.{ts,tsx,js,mjs,cjs}": "node scripts/check-docs.mjs"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
     "@types/node": "catalog:",
     "husky": "^9.1.7",
-    "knip": "^6.38.0",
-    "lint-staged": "^17.5.1",
-    "prettier": "^3.9.9",
+    "knip": "^6.42.1",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10",
     "sherif": "^1.13.0",
-    "turbo": "^2.11.0",
+    "turbo": "^2.11.9",
     "typescript": "catalog:"
   }
 }
