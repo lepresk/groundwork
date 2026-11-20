@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "drizzle-orm": "catalog:",
-    "pg": "^8.23.0"
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "@groundwork/eslint-config": "workspace:*",
